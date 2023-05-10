@@ -3,23 +3,53 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Atma', cursive;
+    font-family: 'Poppins', sans-serif;
 }
 section{
     position: relative;
     width: 100%;
     min-height: 100vh;
     padding: 100px;
-    background: #FFF6F7;
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
+    background: #121212;
     overflow: hidden;
 }
-.cicle{
+.menu{
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+    clip-path: circle(50% at bottom right);
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .logo{
+    position: relative;
+    max-width: 150px;
+}
+header .navegation ul{
+    position: relative;
+    display: flex;
+}
+header .navegation  li{
+    list-style: none;
+}
+header .navegation li a{
+    display: inline-block;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 19px;
+    margin-left: 100px;
 }
