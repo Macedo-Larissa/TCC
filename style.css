@@ -74,15 +74,7 @@ header .navegation li a{
     font-size: 55px;
     margin-bottom: 6px;
     line-height: 1.5em;
-    /* font-weight: 700; */
 }
-/* .content .text h2 span{
-    font-size: 3.5em;
-    color: #e51e2a;
-}
-.content .text p{
-    color: #C45C67;
-} */
 .content .text a{
     display: inline-block;
     margin-top: 50px;
@@ -98,4 +90,11 @@ header .navegation li a{
 }
 .content .text a:hover{
     transform: translateY(-10px);
+}
+.boxImg{
+    position: absolute;
+    right: 0;
+}
+.boxImg img{
+    width: 480px;
 }
