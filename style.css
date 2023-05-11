@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Atma:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Atma:wght@600;700&family=Poppins:wght@300&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -71,7 +71,7 @@ header .navegation li a{
 }
 .content .text h2{
     color: #C45C67;
-    font-size: 55px;
+    font-size: 50px;
     margin-bottom: 6px;
     line-height: 1.5em;
 }
