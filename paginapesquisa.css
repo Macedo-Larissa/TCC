@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Atma:wght@600;700&family=Poppins:wght@300&display=swap');
+
+body{
+    margin: 0;
+    height: 100vh;
+    width: 100vh;
+    background: #FFF6F7;
+}
+
+.titulo {
+    font-family:'Atma', cursive;
+    font-size: 60px;
+    color: #C45C67;
+    text-align: center;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+
+}
+
+.caixa-de-pesquisa {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #FFE8EB;
+    height: 40px;
+    padding: 10px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.texto-pesquisa {
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0;
+    color: #C45C67;
+    font-size: 16px;
+    line-height: 40px;
+    width: 0;
+    transition: .5s;
+    font-family:'Poppins', sans-serif;;  
+}
+
+.botao-pesquisar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.caixa-de-pesquisa:hover > .texto-pesquisa {
+    width: 240px;
+    padding: 0 6px;
+}
+ 
