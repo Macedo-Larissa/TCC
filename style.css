@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Atma', cursive;
 }
 section{
     position: relative;
@@ -13,7 +13,7 @@ section{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #121212;
+    background: #FFF6F7;
     overflow: hidden;
 }
 .menu{
@@ -47,9 +47,55 @@ header .navegation  li{
 }
 header .navegation li a{
     display: inline-block;
-    color: #fff;
+    color: #C45C67;
     font-weight: 500;
     text-decoration: none;
-    font-size: 19px;
+    font-size: 22px;
     margin-left: 100px;
+    background: #FFC6CC;
+    border-radius: 40px;
+    padding: 3px 30px;
+    transition: 0.3s ease-in-out;
+}
+.content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.content .text{
+    position: relative;
+    max-width: 600px;
+    margin-right: 20px;
+}
+.content .text h2{
+    color: #C45C67;
+    font-size: 55px;
+    margin-bottom: 6px;
+    line-height: 1.5em;
+    /* font-weight: 700; */
+}
+/* .content .text h2 span{
+    font-size: 3.5em;
+    color: #e51e2a;
+}
+.content .text p{
+    color: #C45C67;
+} */
+.content .text a{
+    display: inline-block;
+    margin-top: 50px;
+    padding: 12px 35px;
+    background: #F498A2;
+    color: #FFF6F7;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+    border-radius: 40px;
+    transition: 0.3s ease-in-out;
+    font-size: 30px;
+}
+.content .text a:hover{
+    transform: translateY(-10px);
 }
