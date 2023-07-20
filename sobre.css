@@ -11,7 +11,7 @@ html {
 }
 
 .sobre {
-    margin-top: 100px;
+    margin-top: 80px;
     margin-left: 20%;
 }
 
@@ -58,7 +58,7 @@ html {
     text-align: center;
     position: absolute;
     top: 0;
-    left: 50%;
+    left: 46%;
     display: flex;
     align-items: center;
 
