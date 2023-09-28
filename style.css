@@ -98,3 +98,9 @@ header .navegation li a{
 .boxImg img{
     width: 480px;
 }
+
+@media (max-width: 768px) {
+
+
+
+}
