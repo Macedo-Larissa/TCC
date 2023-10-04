@@ -68,9 +68,13 @@ html {
     background-color: #FFC6CC;
 }
 
-@media screen and (max-width: 650px) {
+
+
+@media (max-width: 768px) {
+
     .column {
         width: 100%;
         display: block;
     }
+
 }
