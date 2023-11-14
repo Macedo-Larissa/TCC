@@ -3,7 +3,7 @@
 
 $host = "aws.connect.psdb.cloud";
 $username = "wgbxmwizptxq4hj27jnc";
-$password = "pscale_pw_nF3AXj95yS4LMUW1ThaZTAGBkYMkZMdVXEFlngWFaM7";
+$password = "";
 $database = "teste";
 
 $conexao = new mysqli($host, $username, $password, $database);
