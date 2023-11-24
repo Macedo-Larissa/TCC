@@ -1,25 +1,28 @@
 <?php
 // Código PHP para conexão com o banco de dados e busca de imagem
 
-$host = "aws.connect.psdb.cloud";
-$username = "wgbxmwizptxq4hj27jnc";
-$password = "";
-$database = "teste";
+$DB_HOST="aws.connect.psdb.cloud";
+$DB_USERNAME="61y21dm8p7wyu2l1pzaw";
+$DB_PASSWORD="pscale_pw_mD13TpkLc2fPSS9KuS8OeN0a0VrE5lVC0low1d0aooP";
+$DB_NAME="teste";
 
-$conexao = new mysqli($host, $username, $password, $database);
+//$conexao = new mysqli($host, $username, $password, $database);
 
-
+$mysqli = mysqli_init();
+  $mysqli->ssl_set(NULL, NULL, "/etc/ssl/certs/ca-certificates.crt", NULL, NULL);
+  $conexao = $mysqli->real_connect($DB_HOST, $DB_USERNAME, $DB_PASSWORD, $DB_NAME);
+  //$mysqli->close();
 
 // Processar a busca
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $termo_de_busca = $_POST["nome_imagem"];
 
     // Mensagem de depuração para verificar o termo de busca
-    echo "Termo de Busca: $termo_de_busca <br>";
+    //echo "Termo de Busca: $termo_de_busca <br>";
 
     // Consulta para buscar imagens com base no nome
-    $consulta = "SELECT * FROM TbTeste WHERE NomeImagem LIKE '%$termo_de_busca%'";
-    echo "Consulta SQL: $consulta <br>";
+    $consulta = "SELECT * FROM TbTeste"; // WHERE NomeImagem LIKE '%$termo_de_busca%'";
+    //echo "Consulta SQL: $consulta <br>";
 
     $resultado = $conexao->query($consulta);
 
