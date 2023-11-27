@@ -5,18 +5,7 @@
 }
 
 .u-section-1 .u-sheet-1 {
-  min-height: 714px;
-}
-
-.u-section-1 .u-text-1 {
-  font-weight: 700;
-  font-size: 3.75rem;
-  --animation-custom_in-translate_x: 0px;
-  --animation-custom_in-translate_y: 0px;
-  --animation-custom_in-opacity: 0;
-  --animation-custom_in-rotate: 0deg;
-  --animation-custom_in-scale: 1;
-  margin: 276px 459px 0 0;
+  min-height: 730px;
 }
 
 .u-section-1 .u-image-1 {
@@ -27,7 +16,18 @@
   --animation-custom_in-opacity: 0;
   --animation-custom_in-rotate: 0deg;
   --animation-custom_in-scale: 1;
-  margin: -340px 0 0 auto;
+  margin: 60px auto 0 716px;
+}
+
+.u-section-1 .u-text-1 {
+  font-weight: 700;
+  font-size: 3.75rem;
+  --animation-custom_in-translate_x: 0px;
+  --animation-custom_in-translate_y: 0px;
+  --animation-custom_in-opacity: 0;
+  --animation-custom_in-rotate: 0deg;
+  --animation-custom_in-scale: 1;
+  margin: -311px 459px 0 0;
 }
 
 .u-section-1 .u-btn-1 {
@@ -36,23 +36,32 @@
   text-transform: none;
   transition-duration: 0.5s;
   box-shadow: -2px 2px 8px 0px rgba(128,128,128,1);
-  transform: translateX(0px) translateY(0px) scale(1) rotate(0deg);
   text-shadow: 0px 0px 0px rgba(0,0,0,0);
   --animation-custom_in-translate_x: 0px;
   --animation-custom_in-translate_y: 0px;
   --animation-custom_in-opacity: 0;
   --animation-custom_in-rotate: 0deg;
   --animation-custom_in-scale: 1;
-  margin: -55px auto 60px 0;
+  transform: translateX(0px) translateY(0px) scale(1) rotate(0deg);
+  margin: 35px auto 90px 0;
 }
 
 @media (max-width: 1199px) {
+  .u-section-1 .u-image-1 {
+    margin-left: 516px;
+  }
+
   .u-section-1 .u-text-1 {
+    margin-top: 20px;
     margin-right: 259px;
   }
 }
 
 @media (max-width: 991px) {
+  .u-section-1 .u-image-1 {
+    margin-left: 296px;
+  }
+
   .u-section-1 .u-text-1 {
     margin-right: 39px;
   }
@@ -61,6 +70,10 @@
 @media (max-width: 767px) {
   .u-section-1 .u-sheet-1 {
     min-height: 940px;
+  }
+
+  .u-section-1 .u-image-1 {
+    margin-left: 116px;
   }
 
   .u-section-1 .u-text-1 {
@@ -74,22 +87,19 @@
     min-height: 684px;
   }
 
-  .u-section-1 .u-text-1 {
-    font-size: 2.25rem;
-    width: auto;
-    margin-top: 37px;
-  }
-
   .u-section-1 .u-image-1 {
     height: 340px;
-    margin-top: -21px;
     margin-right: initial;
     margin-left: initial;
     width: auto;
   }
 
+  .u-section-1 .u-text-1 {
+    font-size: 2.25rem;
+    width: auto;
+  }
+
   .u-section-1 .u-btn-1 {
-    margin-top: 10px;
     margin-left: auto;
   }
 }

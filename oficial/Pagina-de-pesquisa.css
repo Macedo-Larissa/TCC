@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Atma:wght@600;700&family=Poppins:wght@300&display=swap');
 
+
 .caixa-de-pesquisa {
   position: absolute;
   top: 60%;
@@ -10,6 +11,7 @@
   border-radius: 40px;
   display: flex;
 }
+
 .texto-pesquisa {
   border: none;
   background: none;
@@ -19,7 +21,7 @@
   line-height: 40px;
   width: 300px;
   font-family: 'Poppins', sans-serif;
-  
+
 }
 
 .u-section-1 {
@@ -27,18 +29,18 @@
 }
 
 .u-section-1 .u-sheet-1 {
-  min-height: 698px;
+  min-height: 730px;
 }
 
 .u-section-1 .u-text-1 {
   font-weight: 700;
-  width: 785px;
   --animation-custom_in-translate_x: 0px;
   --animation-custom_in-translate_y: 0px;
   --animation-custom_in-opacity: 0;
   --animation-custom_in-rotate: 0deg;
   --animation-custom_in-scale: 1;
-  margin: 222px auto 0;
+  width: 785px;
+  margin: 60px auto 0;
 }
 
 .u-section-1 .u-custom-html-1 {
@@ -49,8 +51,17 @@
   margin: 82px auto 60px;
 }
 
+@media (max-width: 1199px) {
+  .u-section-1 .u-text-1 {
+    margin-left: 78px;
+    margin-right: 78px;
+  }
+}
+
 @media (max-width: 991px) {
   .u-section-1 .u-text-1 {
+    margin-left: 0;
+    margin-right: 0;
     width: 720px;
   }
 }
@@ -63,10 +74,6 @@
 
 @media (max-width: 575px) {
   .u-section-1 .u-text-1 {
-    width: 340px;
-  }
-
-  .u-section-1 .u-custom-html-1 {
-    margin-top: 97px;
+    width: auto;
   }
 }
