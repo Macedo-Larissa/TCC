@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Atma:wght@600;700&family=Poppins:wght@300&display=swap');
+
+.u-section-1 .u-sheet-1 {
+  min-height: 730px;
+}
+
+.u-section-1 .u-custom-php-1 {
+  min-height: 228px;
+  height: auto;
+  width: 570px;
+  margin: 80px auto 40px;
+  text-align: center; /* Centraliza o conteúdo */
+}
+
+@media (max-width: 767px) {
+  .u-section-1 .u-custom-php-1 {
+    width: 540px;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-section-1 .u-custom-php-1 {
+    width: 340px;
+  }
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  max-height: 450px; 
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
