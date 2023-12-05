@@ -1,29 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Atma:wght@600;700&family=Poppins:wght@300&display=swap');
 
 
-.caixa-de-pesquisa {
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: #FFE8EB;
-  padding: 10px;
-  border-radius: 40px;
-  display: flex;
-}
-
-.texto-pesquisa {
-  border: none;
-  background: none;
-  outline: none;
-  color: #C45C67;
-  font-size: 16px;
-  line-height: 40px;
-  width: 300px;
-  font-family: 'Poppins', sans-serif;
-
-}
-
 .u-section-1 {
   background-image: none;
 }
@@ -49,6 +26,29 @@
   --animation-custom_in-scale: 1;
   width: 248px;
   margin: 82px auto 60px;
+}
+
+.caixa-de-pesquisa {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #FFE8EB;
+  padding: 10px;
+  border-radius: 40px;
+  display: flex;
+}
+
+.texto-pesquisa {
+  border: none;
+  background: none;
+  outline: none;
+  color: #C45C67;
+  font-size: 16px;
+  line-height: 40px;
+  width: 300px;
+  font-family: 'Poppins', sans-serif;
+
 }
 
 @media (max-width: 1199px) {

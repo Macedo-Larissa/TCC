@@ -89,31 +89,39 @@
       $password = "";
       $database = "mathsearch";
 
-      $conexao = new mysqli($host, $username, $password, $database);
-
       if ($_SERVER["REQUEST_METHOD"] == "POST") {
-          $termo_de_busca = $_POST["nome_imagem"];
+          if (!empty($_POST["nome_imagem"])) {
+              $termo_de_busca = $_POST["nome_imagem"];
 
-          $consulta = "SELECT * FROM imagens WHERE NomeImagem LIKE '%$termo_de_busca%'";
+              $conexao = new mysqli($host, $username, $password, $database);
 
-          $resultado = $conexao->query($consulta);
-
-          if ($resultado === false) {
-              echo "Erro na consulta: " . $conexao->error;
-          }
-
-          if ($resultado->num_rows > 0) {
-              while ($imagem = $resultado->fetch_assoc()) {
-                  echo "<h2>{$imagem['NomeImagem']}</h2>";
-                  echo "<img src='{$imagem['CaminhoImagem']}' alt='{$imagem['NomeImagem']}'>";
-                  echo "<hr>";
+              if ($conexao->connect_error) {
+                  die("Erro na conexão: " . $conexao->connect_error);
               }
+
+              $consulta = "SELECT * FROM imagens WHERE NomeImagem LIKE '%$termo_de_busca%'";
+
+              $resultado = $conexao->query($consulta);
+
+              if ($resultado === false) {
+                  echo "Erro na consulta: " . $conexao->error;
+              }
+
+              if ($resultado->num_rows > 0) {
+                  while ($imagem = $resultado->fetch_assoc()) {
+                      echo "<h2>{$imagem['NomeImagem']}</h2>";
+                      echo "<img src='{$imagem['CaminhoImagem']}' alt='{$imagem['NomeImagem']}'>";
+                      echo "<hr>";
+                  }
+              } else {
+                  echo "<p class='not-found'>Nenhum conceito encontrado para '$termo_de_busca'.</p>";
+              }
+
+              $conexao->close();
           } else {
-              echo "<p class='not-found'>Nenhuma imagem encontrada para '$termo_de_busca'.</p>";
+              echo "<p class='not-found'>Por favor, insira uma consulta válida.</p>";
           }
       }
-
-      $conexao->close();
     ?>
     </div>
     </div>
