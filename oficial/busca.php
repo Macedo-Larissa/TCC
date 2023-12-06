@@ -27,9 +27,9 @@
       class="u-clearfix u-sheet u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-valign-middle-xl u-sheet-1">
       <p class="u-text u-text-1">
         <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-custom-color-1 u-btn-1"
-          data-href="Pagina-inicial.html">Mathematical Search</a>
+          data-href="paginainicial.html">Mathematical Search</a>
       </p>
-      <a href="Pagina-inicial.html" class="u-image u-logo u-image-1" data-image-width="150" data-image-height="150"
+      <a href="paginainicial.html" class="u-image u-logo u-image-1" data-image-width="150" data-image-height="150"
         title="Pagina inicial">
         <img src="images/icons8-matemtica-96.png" class="u-logo-image u-logo-image-1">
       </a>
