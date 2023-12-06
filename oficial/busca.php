@@ -7,6 +7,7 @@
   <meta name="keywords" content="">
   <meta name="description" content="">
   <title>Resultado</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <link rel="icon" type="image/png" href="images/icons8-matemtica-96.png">
   <link rel="stylesheet" href="nicepage.css" media="screen">
   <link rel="stylesheet" href="busca.css" media="screen">
@@ -37,10 +38,9 @@
           <a class="u-button-style u-custom-border-radius u-custom-color u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-text-active-color u-custom-text-color u-custom-text-hover-color u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-custom-color-1 u-text-hover-palette-2-base"
             href="#">
               <svg class="u-svg-link" viewBox="0 0 24 24">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-bbb9"></use>
+                <use href="#svg-bbb9"></use>
               </svg>
-              <svg class="u-svg-content" version="1.1" id="svg-bbb9" viewBox="0 0 16 16" x="0px" y="0px"
-                xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+              <svg class="u-svg-content" version="1.1" id="svg-bbb9" viewBox="0 0 16 16" x="0px" y="0px">
                 <g>
                   <rect y="1" width="16" height="2"></rect>
                   <rect y="7" width="16" height="2"></rect>
@@ -53,10 +53,10 @@
           <ul class="u-nav u-spacing-41 u-unstyled u-nav-1">
             <li class="u-nav-item"><a
                 class="u-button-style u-custom-color-4 u-nav-link u-radius-50 u-text-custom-color-1"
-                href="Pagina-inicial.html" style="padding: 10px 20px;">Página Inicial</a>
+                href="paginainicial.html" style="padding: 10px 20px;">Página Inicial</a>
             </li>
             <li class="u-nav-item"><a
-                class="u-button-style u-custom-color-4 u-nav-link u-radius-50 u-text-custom-color-1" href="Sobre.html"
+                class="u-button-style u-custom-color-4 u-nav-link u-radius-50 u-text-custom-color-1" href="sobre.html"
                 style="padding: 10px 20px;">Sobre</a>
             </li>
           </ul>
@@ -66,10 +66,10 @@
             <div class="u-inner-container-layout u-sidenav-overflow">
               <div class="u-menu-close u-menu-close-1"></div>
               <ul class="u-align-center u-custom-font u-nav u-popupmenu-items u-text-font u-unstyled u-nav-2">
-                <li class="u-nav-item"><a class="u-button-style u-nav-link" href="Pagina-inicial.html">Página
+                <li class="u-nav-item"><a class="u-button-style u-nav-link" href="paginainicial.html">Página
                     Inicial</a>
                 </li>
-                <li class="u-nav-item"><a class="u-button-style u-nav-link" href="Sobre.html">Sobre</a>
+                <li class="u-nav-item"><a class="u-button-style u-nav-link" href="sobre.html">Sobre</a>
                 </li>
               </ul>
             </div>
@@ -106,14 +106,17 @@
               if ($resultado === false) {
                   echo "Erro na consulta: " . $conexao->error;
               }
-
               if ($resultado->num_rows > 0) {
-                  while ($imagem = $resultado->fetch_assoc()) {
-                      echo "<h2>{$imagem['NomeImagem']}</h2>";
-                      echo "<img src='{$imagem['CaminhoImagem']}' alt='{$imagem['NomeImagem']}'>";
-                      echo "<hr>";
-                  }
-              } else {
+                while ($imagem = $resultado->fetch_assoc()) {
+                  echo "<h2>{$imagem['NomeImagem']}</h2>";
+                  echo "<img src='{$imagem['CaminhoImagem']}' alt='{$imagem['NomeImagem']}'>";
+                  echo "<div>";
+                  echo "<a href='{$imagem['CaminhoImagem']}' download='{$imagem['NomeImagem']}' class='button'>";
+                  echo "<i class='fas fa-download'></i> Baixar";
+                  echo "</a>";
+                  echo "</div>";
+              }
+            } else {
                   echo "<p class='not-found'>Nenhum conceito encontrado para '$termo_de_busca'.</p>";
               }
 
@@ -131,7 +134,7 @@
     <div class="u-clearfix u-sheet u-sheet-1">
       <p class="u-align-center u-small-text u-text u-text-variant u-text-1">2023<br>Site com fins educativos
       </p>
-      <a href="Sugestão.html"
+      <a href="sugestao.html"
         class="u-active-none u-border-1 u-border-hover-white u-border-no-left u-border-no-right u-border-no-top u-border-palette-2-base u-btn u-button-style u-hover-none u-none u-text-hover-palette-2-base u-text-palette-1-base u-btn-1">SUGIRA
         AQUI!</a>
     </div>
