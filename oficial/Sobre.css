@@ -2,6 +2,7 @@
 
 .u-section-1 {
   background-image: none;
+  padding-bottom: 50px;
 }
 
 .u-section-1 .u-sheet-1 {
@@ -25,9 +26,9 @@
 }
 
 .u-section-1 .u-repeater-1 {
-  grid-template-columns: calc(33.3333% - 20px) calc(33.3333% - 20px) calc(33.3333% - 20px);
+  grid-template-columns: calc(33.3333% - 10px) calc(33.3333% - 10px) calc(33.3333% - 10px);
   min-height: 646px;
-  grid-gap: 30px 30px;
+  grid-gap: 10px;
 }
 
 .u-section-1 .u-list-item-1 {
