@@ -135,8 +135,7 @@
       <p class="u-align-center u-small-text u-text u-text-variant u-text-1">2023<br>Site com fins educativos
       </p>
       <a href="sugestao.html"
-        class="u-active-none u-border-1 u-border-hover-white u-border-no-left u-border-no-right u-border-no-top u-border-palette-2-base u-btn u-button-style u-hover-none u-none u-text-hover-palette-2-base u-text-palette-1-base u-btn-1">SUGIRA
-        AQUI!</a>
+        class="u-active-none u-border-1 u-border-hover-white u-border-no-left u-border-no-right u-border-no-top u-border-palette-2-base u-btn u-button-style u-hover-none u-none u-text-hover-palette-2-base u-text-palette-1-base u-btn-1">SUGERIR AQUI</a>
     </div>
   </footer>
 </body>
